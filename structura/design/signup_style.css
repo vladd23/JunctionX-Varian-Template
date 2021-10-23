@@ -73,14 +73,12 @@ body {
 .login-box form a {
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
     color: var(--c);
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
     letter-spacing: 4px
 }
 
@@ -172,4 +170,24 @@ body {
     50%,100% {
         bottom: 100%;
     }
+}
+
+.SubmitButton {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--c);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.SubmitButton:hover {
+    color: #fff;
 }
