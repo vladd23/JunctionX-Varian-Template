@@ -1,12 +1,155 @@
-body {
+* {
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("assets/hands-with-health.png");
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: url(assets/hands-with-health5.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.7);
     background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p{
+
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contact_info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contact_info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contact_info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.container .contact_info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contact_info .box .text h3{
+    font-weight: 800;
+    color: #33ccff;
+}
+
+.contact_form{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contact_form h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact_form .input_box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact_form .input_box input, textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contact_form .input_box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contact_form .input_box input:focus ~ span,
+.contact_form .input_box input:valid ~ span,
+.contact_form .input_box textarea:focus ~ span,
+.contact_form .input_box textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact_form .input_box input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 990px){
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contact_info{
+        margin-bottom: 40px;
+    }
 }
