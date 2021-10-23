@@ -5,9 +5,16 @@
 
 }
 
-body{
-    background-image:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("assets/hands-with-health.png");
+body {
+    align-items: center;
+    justify-content: center;
+    background: url(assets/hands-with-health5.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 
 .contact{
     position: relative;
