@@ -1,12 +1,60 @@
 body {
     margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(assets/morga.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: #ffffb3;
+    color: #333;
+}
+
+.blog {
+    margin: 25px 0;
+}
+
+p{
+    text-align: left;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.heading{
+    padding: 30px 30px;
+    background-color: #ffffb3;
+    border: 1px solid black;
+}
+
+.heading h2{
+    font-size: 2rem;
+    font-family: 'Ultra', serif;
+}
+
+.heading p{
+    font-family: 'Roboto Slab', serif;
+    opacity: 1;
+}
+
+.blog img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-inf{
+    background-color: #ffffb3;
+    padding: 20px;
+
+}
+
+.blog-inf h3{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.blog-inf span{
+    display: block;
+    margin: 20px 0;
+    color: #0c0c0c;
+    text-transform: capitalize;
+
 }
